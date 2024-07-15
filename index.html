@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSL para Software Autoadministrable</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Añade tu CSS personalizado aquí -->
+    <style>
+        /* Animaciones básicas */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .slide-in-left {
+            animation: slideInLeft 1s ease-in-out;
+        }
+
+        .slide-in-right {
+            animation: slideInRight 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .cta-btn {
+            background-color: #25D366; /* WhatsApp color */
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #1EBE57;
+        }
+    </style>
+    <script>
+        let counter = 0;
+
+        function incrementCounter() {
+            counter++;
+            document.getElementById('contact-counter').innerText = counter;
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Título Promesa -->
+    <header class="text-center py-10 bg-blue-700 text-white">
+        <h1 class="text-4xl font-bold">Descubre cómo administrar tu página web y llevar tu negocio al siguiente nivel</h1>
+        <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+    </header>
+
+    <!-- Secciones -->
+    <main class="max-w-3xl mx-auto px-4">
+        <!-- VIDEO -->
+        <section id="video" class="text-center py-10 fade-in bg-white shadow-md rounded-lg my-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-700">Mira este breve video</h2>
+            <div class="w-full h-64 bg-gray-300 flex items-center justify-center rounded-lg">
+                <span>Video Placeholder</span>
+            </div>
+            <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+        </section>
+
+        <!-- Problemas / Pérdida de Clientes -->
+        <section id="problemas" class="text-center py-10 slide-in-left bg-white shadow-md rounded-lg my-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-700">¿Tienes problemas con la administración de tu sitio web?</h2>
+            <p class="text-lg">Muchos negocios pierden clientes porque no pueden actualizar su contenido a tiempo o porque su sitio web no es fácil de administrar. ¿Te resulta familiar?</p>
+            <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+        </section>
+
+        <!-- Funcionalidades y Beneficios -->
+        <section id="funcionalidades-beneficios" class="grid grid-cols-1 md:grid-cols-2 gap-8 py-10 bg-white shadow-md rounded-lg my-8">
+            <div class="text-center slide-in-left">
+                <h2 class="text-3xl font-bold mb-4 text-blue-700">Funcionalidades destacadas</h2>
+                <ul class="text-lg list-disc list-inside text-left mx-auto max-w-xs">
+                    <li>Interfaz intuitiva y amigable</li>
+                    <li>Actualizaciones en tiempo real</li>
+                    <li>Gestión de contenido sencilla</li>
+                    <li>Integración con redes sociales</li>
+                </ul>
+                <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+            </div>
+            <div class="text-center slide-in-right">
+                <h2 class="text-3xl font-bold mb-4 text-blue-700">Beneficios para tu negocio</h2>
+                <ul class="text-lg list-disc list-inside text-left mx-auto max-w-xs">
+                    <li>Aumenta la eficiencia operativa</li>
+                    <li>Mejora la experiencia del cliente</li>
+                    <li>Reduce el tiempo de inactividad</li>
+                    <li>Incrementa tus ventas y conversiones</li>
+                </ul>
+                <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+            </div>
+        </section>
+
+        <!-- Comparación -->
+        <section id="comparacion" class="text-center py-10 fade-in bg-white shadow-md rounded-lg my-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-700">Comparación con otros productos</h2>
+            <p class="text-lg">A diferencia de otros sistemas, nuestro software es más fácil de usar, más asequible y cuenta con un soporte al cliente excepcional que te acompaña en cada paso del camino.</p>
+            <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+        </section>
+
+        <!-- Explicación de las Opciones de Compra -->
+        <section id="opciones-compra" class="text-center py-10 slide-in-left bg-white shadow-md rounded-lg my-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-700">Opciones de compra flexibles</h2>
+            <p class="text-lg">Elige el plan que mejor se adapte a tus necesidades. Ofrecemos planes mensuales y anuales con descuentos especiales para suscripciones a largo plazo.</p>
+            <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+        </section>
+
+        <!-- Planes -->
+        <section id="planes" class="text-center py-10 bg-white shadow-md rounded-lg my-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-700">Nuestros Planes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Plan Básico -->
+                <div class="p-6 bg-white shadow-lg rounded-lg border-t-4 border-blue-700 slide-in-left">
+                    <h3 class="text-2xl font-bold mb-2 text-blue-700">Básico</h3>
+                    <p class="text-lg mb-4">Ideal para pequeñas empresas que necesitan un administrador web básico.</p>
+                    <ul class="text-left list-disc list-inside text-lg">
+                        <li>Acceso completo al administrador web</li>
+                        <li>Actualizaciones en tiempo real</li>
+                        <li>Integración con redes sociales</li>
+                        <li>Soporte básico</li>
+                    </ul>
+                    <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+                </div>
+                <!-- Plan Intermedio -->
+                <div class="p-6 bg-white shadow-lg rounded-lg border-t-4 border-green-700 slide-in-left">
+                    <h3 class="text-2xl font-bold mb-2 text-green-700">Intermedio</h3>
+                    <p class="text-lg mb-4">Para empresas que desean llevar la administración a sus dispositivos móviles.</p>
+                    <ul class="text-left list-disc list-inside text-lg">
+                        <li>Todo en el plan Básico</li>
+                        <li>Acceso al administrador desde dispositivos móviles</li>
+                        <li>Soporte prioritario</li>
+                    </ul>
+                    <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+                </div>
+                <!-- Plan Premium -->
+                <div class="p-6 bg-white shadow-lg rounded-lg border-t-4 border-red-700 slide-in-left">
+                    <h3 class="text-2xl font-bold mb-2 text-red-700">Premium</h3>
+                    <p class="text-lg mb-4">Para empresas que buscan maximizar su presencia en línea con todas nuestras herramientas.</p>
+                    <ul class="text-left list-disc list-inside text-lg">
+                        <li>Todo en el plan Intermedio</li>
+                        <li>Integración con Google Analytics</li>
+                        <li>Creación de logos y asesoramiento de la marca</li>
+                        <li>Guía en base a publicidad y cómo posicionar la marca en redes sociales</li>
+                        <li>Soporte premium</li>
+                        <li>Reportes avanzados</li>
+                    </ul>
+                    <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gatillos Mentales y Contador -->
+        <section id="gatillos-contador" class="grid grid-cols-1 md:grid-cols-2 gap-8 py-10 bg-white shadow-md rounded-lg my-8">
+            <div class="text-center slide-in-left">
+                <h2 class="text-3xl font-bold mb-4 text-blue-700">Escasez</h2>
+                <p class="text-lg">¡Quedan pocos lugares disponibles! No pierdas esta oportunidad única de mejorar tu negocio.</p>
+                <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+            </div>
+            <div class="text-center slide-in-right">
+                <h2 class="text-3xl font-bold mb-4 text-blue-700">Prueba Social</h2>
+                <p class="text-lg">Más de 1000 empresas ya confían en nuestro software para gestionar sus sitios web. Únete a ellos y lleva tu negocio al siguiente nivel.</p>
+                <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+            </div>
+            <div class="text-center slide-in-left">
+                <h2 class="text-3xl font-bold mb-4 text-blue-700">Autoridad</h2>
+                <p class="text-lg">Somos líderes en el mercado con más de 10 años de experiencia ayudando a empresas como la tuya a crecer y tener éxito en línea.</p>
+                <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+            </div>
+            <div class="text-center slide-in-right">
+                <h2 class="text-3xl font-bold mb-4 text-blue-700">Urgencia</h2>
+                <p class="text-lg">¡Oferta limitada! Contrata nuestro software hoy y recibe un descuento especial en tu primera suscripción.</p>
+                <p id="contact-counter" class="text-lg font-bold">0 personas han solicitado información</p>
+                <a href="https://wa.me/tu_numero_de_whatsapp" class="cta-btn mt-4 inline-block" onclick="incrementCounter()">Contáctanos Ahora</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contador de Contactos -->
+    <footer class="text-center py-4 bg-gray-800 text-white">
+        <p id="contact-counter" class="text-lg">0 personas han solicitado información</p>
+    </footer>
+</body>
+</html>
